@@ -143,6 +143,7 @@
                 </li>
             </ul>
             <img src="./images/portfolio_carousel_icon.png" alt="error:(" class="portfolio__icon">
+            <img src="./images/portfolio_carousel_icon_2.png" alt="error:(" class="portfolio__icon_second">
         </div>
         <!-- portfolio end -->
 
@@ -176,5 +177,18 @@
         <!-- footer end -->
     </div>
     
+    <script>
+        let openBtn = document.querySelector('.navbar__btn_burger');
+        let closeBtn = document.querySelector('.burger-menu__btn_close');
+        let burgerMenu = document.querySelector('.burger-menu');
+
+        openBtn.addEventListener('click', () => {
+            burgerMenu.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            burgerMenu.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
